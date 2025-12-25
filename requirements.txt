@@ -1,0 +1,7 @@
+streamlit
+huggingface_hub[hf_xet]
+torch
+transformers
+pypdf
+python-docx
+python-pptx
