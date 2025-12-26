@@ -2,7 +2,7 @@ streamlit
 huggingface_hub[hf_xet]
 torch
 tokenizers>=0.14.1
-transformers
+transformers==4.3.3
 pypdf
 python-docx
 python-pptx
