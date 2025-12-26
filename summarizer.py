@@ -1,6 +1,7 @@
-from transformers import AutoTokenizer, pipeline
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 
 tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
+model = AutoModelForSeq2SeqLM.from_pretrained("facebook/bart-large-cnn")
 
 summarizer = pipeline(
     "summarization",
