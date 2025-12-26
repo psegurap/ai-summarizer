@@ -5,7 +5,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained("facebook/bart-large-cnn")
 
 summarizer = pipeline(
     "summarization",
-    model="facebook/bart-large-cnn",
+    model=model,
     tokenizer=tokenizer
 )
 
