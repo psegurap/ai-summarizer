@@ -83,13 +83,12 @@ if submitted or uploaded_file is not None:
                 st.exception(e)
                 # st.exception("We couldn’t process this file for summarization. Please try again or upload a different file.")
 
-        with st.container(horizontal=True, horizontal_alignment="right"):
-            if st.button(label="New summary?", icon=":material/restart_alt:",
-                         on_click=lambda: toggle_elements("file")):
-                st.rerun()
-
         if result != "":
 
+            with st.container(horizontal=True, horizontal_alignment="right"):
+                if st.button(label="New summary?", icon=":material/restart_alt:",
+                             on_click=lambda: toggle_elements("file")):
+                    st.rerun()
 
             with st.expander(label="Your Summary:", icon=":material/text_snippet:", expanded=True):
                 st.write(result)
